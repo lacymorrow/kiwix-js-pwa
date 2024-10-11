@@ -52,6 +52,25 @@
         }
       ]
     },
+        "nsis": {
+      "oneClick": "false",
+      "allowElevation": "true",
+      "runAfterFinish": "true"
+    },
+    "nsisWeb": {
+      "oneClick": "false",
+      "allowElevation": "true",
+      "runAfterFinish": "true"
+    },
+    "appx": {
+      "backgroundColor": "transparent",
+      "displayName": "Kiwix JS",
+      "identityName": "Kiwix.KiwixJS",
+      "publisher": "CN=Association Kiwix, O=Association Kiwix, L=Lausanne, S=Canton of Vaud, C=CH",
+      "publisherDisplayName": "Association Kiwix",
+      "languages": "en-GB",
+      "showNameOnTiles": "true"
+    },
     "linux": {
       "asar": "true",
       "extraResources": {
@@ -84,25 +103,24 @@
       ],
       "category": "Education"
     },
-    "nsis": {
-      "oneClick": "false",
-      "allowElevation": "true",
-      "runAfterFinish": "true"
-    },
-    "nsisWeb": {
-      "oneClick": "false",
-      "allowElevation": "true",
-      "runAfterFinish": "true"
-    },
-    "appx": {
-      "backgroundColor": "transparent",
-      "displayName": "Kiwix JS",
-      "identityName": "Kiwix.KiwixJS",
-      "publisher": "CN=Association Kiwix, O=Association Kiwix, L=Lausanne, S=Canton of Vaud, C=CH",
-      "publisherDisplayName": "Association Kiwix",
-      "languages": "en-GB",
-      "showNameOnTiles": "true"
-    },
+
+    "mac": {
+    "target": {
+				"target": "default",
+				"arch": [
+					"arm64",
+					"x64",
+					"universal"
+				]
+			},
+			"type": "distribution",
+			"hardenedRuntime": true,
+			"entitlements": "./entitlements.mac.plist",
+			"entitlementsInherit": "./entitlements.mac.plist",
+			"gatekeeperAssess": false,
+      "category": "public.app-category.education",
+			"darkModeSupport": true
+		},
     "files": [
       "service-worker.js",
       "index.html",
@@ -127,6 +145,8 @@
     "build-src": "rollup --config --file dist/www/js/bundle.js",
     "del": "del-cli dist",
     "start": "electron .",
+    "dist": "electron-builder build --projectDir dist",
+    "dist-mac": "electron-builder build --mac --projectDir dist",
     "dist-win": "electron-builder build --win --projectDir dist",
     "dist-win-arm64": "electron-builder build --win NSIS:arm64 --projectDir dist",
     "dist-win-nsis": "electron-builder build --win NSIS:ia32 --publish never --projectDir dist",

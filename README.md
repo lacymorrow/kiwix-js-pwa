@@ -8,7 +8,7 @@ Demos:&emsp;[&nbsp;[Instal PWA on Desktop](screenshots/Install-PWA.md)&nbsp;]&em
 It makes knowledge available, in many different languages, to people with limited or no Internet access. The software and the content are
 free for anyone to use. Get the app and download your choice of offline content (ZIM archives, which can be downloaded free in-app).
 There are hundreds of multilingual archives to choose from, on many different topics and subjects. Build a whole digital library of
-offline knowledge!** 
+offline knowledge!**
 
 Part of the [Kiwix family](https://kiwix.org/), this app is available either as an offline-capable, [installable Progressive Web App](#universal-progressive-web-app)
 (PWA), for almost all modern browsers and devices, or else as app packages for various Windows and Linux operating systems: see
@@ -56,7 +56,7 @@ want to download. It's much easier than it sounds!
 ## What about Zimit (Web Archive) format?
 
 Zimit is a service that allows any Web site to be archived as a ZIM, although there are lots of exciting pre-crawled Zimit-based ZIMs for
-you to use (see below). If you want to make your own, try it out at https://youzim.it/. The Kiwix JS PWA and Electron apps have full support for
+you to use (see below). If you want to make your own, try it out at <https://youzim.it/>. The Kiwix JS PWA and Electron apps have full support for
 Zimit-based archives as of v.2.8.5 using the open-source [Replay Web Archive reader](https://replayweb.page/docs/index.html), and already support
 the forthcoming Zimit v2 format. Please note that most Zimit archives will require ServiceWorker mode, due to their highly dynamic content.
 
@@ -79,18 +79,18 @@ try switching the app to Restricted mode (see Content injection mode in Configur
 
 * As a [Progressive Web App](https://pwa.kiwix.org) (PWA) on Linux, Windows, Android, iOS, macOS:
 
-  + <img src="images/googlechrome-color.svg" width="20" /> Google Chrome / Chromium >= 59 (and many browsers based on Chromium, e.g. Opera, Samsung Internet)
-  + <img src="images/microsoftedge-color.svg" width="20" /> Microsoft Edge (Chromium) >= 79
-  + <img src="images/firefoxbrowser-color.svg" width="20" /> Mozilla Firefox >= 68 (but see note about Android`*`)
-  + <img src="images/safari-color.svg" width="20" /> Apple Safari >= 11.3 for iOS and macOS (full-text search only works on iOS 15+)
-  + <img src="images/edgelegacy-color.svg" width="22" /> Microsoft Edge Legacy 18 (Windows only)
+  * <img src="images/googlechrome-color.svg" width="20" /> Google Chrome / Chromium >= 59 (and many browsers based on Chromium, e.g. Opera, Samsung Internet)
+  * <img src="images/microsoftedge-color.svg" width="20" /> Microsoft Edge (Chromium) >= 79
+  * <img src="images/firefoxbrowser-color.svg" width="20" /> Mozilla Firefox >= 68 (but see note about Android`*`)
+  * <img src="images/safari-color.svg" width="20" /> Apple Safari >= 11.3 for iOS and macOS (full-text search only works on iOS 15+)
+  * <img src="images/edgelegacy-color.svg" width="22" /> Microsoft Edge Legacy 18 (Windows only)
 
 * As an application implemented with the following frameworks:
 
-  + <img src="images/electron-color.svg" width="27" /> Electron >= 1.8.0 (Ubuntu, Debian, Fedora, OpenSUSE, AppImage, Windows): [GitHub release](https://kiwix.github.io/kiwix-js-pwa/app)
-  + <img src="images/microsoftwindows-color.svg" width="20" /> Universal Windows Platform (UWP) >=10.0.10240: [Microsoft Store app](https://apps.microsoft.com/detail/9P8SLZ4J979J) or [GitHub release](https://kiwix.github.io/kiwix-js-pwa/app) - Windows 10/11 (Electron), Windows on ARM, Xbox, Windows 10 Mobile
-  + <img src="images/nwjs-color.svg" width="20" /> NWJS >= 0.23.0 (Windows 7/8/10/11): [GitHub release](https://kiwix.github.io/kiwix-js-pwa/app/nwjs.html)
-  + NWJS 0.14.7 (Windows XP/Vista only): [GitHub release](https://kiwix.github.io/kiwix-js-pwa/app/nwjs.html)
+  * <img src="images/electron-color.svg" width="27" /> Electron >= 1.8.0 (Ubuntu, Debian, Fedora, OpenSUSE, AppImage, Windows): [GitHub release](https://kiwix.github.io/kiwix-js-pwa/app)
+  * <img src="images/microsoftwindows-color.svg" width="20" /> Universal Windows Platform (UWP) >=10.0.10240: [Microsoft Store app](https://apps.microsoft.com/detail/9P8SLZ4J979J) or [GitHub release](https://kiwix.github.io/kiwix-js-pwa/app) - Windows 10/11 (Electron), Windows on ARM, Xbox, Windows 10 Mobile
+  * <img src="images/nwjs-color.svg" width="20" /> NWJS >= 0.23.0 (Windows 7/8/10/11): [GitHub release](https://kiwix.github.io/kiwix-js-pwa/app/nwjs.html)
+  * NWJS 0.14.7 (Windows XP/Vista only): [GitHub release](https://kiwix.github.io/kiwix-js-pwa/app/nwjs.html)
 
 `*` With **Firefox on Android**, the app is only useable with files stored in the Origin Private File System. There is a Firefox bug whereby the browser
 attempts to read the entire ZIM archive into memory if opening it from the user-visible file system.
@@ -169,7 +169,8 @@ you should still be able to access this setting so long as the app is in Service
 Refresh the app with Ctrl-R;
 * Vite will watch for changes and will refresh the app when you make any and save them;
 * To preview the bundled version of the app, run `npm run preview`, and Vite will build the app and open a browser window to view the bundled version;
-* To fully build the app, run `npm run build`. The built app will be saved to a directory called `dist` in your cloned repo; 
+* To fully build the app, run `npm run build`. The built app will be saved to a directory called `dist` in your cloned repo;
+* To package the app into an executable or installer for your current OS, run `npm run dist`.
 * To run the app in the Electron framework, you can use `npm start`. This will run the unbundled app in the Electron version specified in `package.json`. See various
 scripts to build the bundled version of the app for Electron in `package.json` (you can only build it for the OS you are currently on, though the Linux app can be built
 on Windows with WSL).
@@ -187,7 +188,7 @@ to Wikipedia or Wikivoyage articles.
 ## Privacy Policy
 
 This Privacy Policy applies to the Kiwix JS Progressive Web App and versions of it packaged for the Electron, NWJS and UWP frameworks that
-are published on Kiwix servers, and by official Kiwix accounts on GitHub and other third-party vendor stores ("app stores"). 
+are published on Kiwix servers, and by official Kiwix accounts on GitHub and other third-party vendor stores ("app stores").
 
 When installed, this application is capable of working entirely offline. It does not collect or record any of your personal data, though
 if you installed it from a Store, the Store operator may collect anonymous usage data (see below). The app only remembers your browsing
@@ -196,13 +197,13 @@ app with the optional exception of the last-visited page.
 
 If you access this application from a secure web server (e.g. the PWA server), it will only work offline if your browser
 is capable of installing a Service Worker. If you install or bookmark the PWA version in Service Worker mode, then it
-will work offline, but note that **by design** any PWA will periodically check the PWA server (in this case, 
-https://pwa.kiwix.org/), if it is available, to check for an updated Service Worker.
+will work offline, but note that **by design** any PWA will periodically check the PWA server (in this case,
+<https://pwa.kiwix.org/>), if it is available, to check for an updated Service Worker.
 
 Versions of the app that are not installed via a Store or that are not PWAs, will offer to check the GitHub Releases API
 for updates on startup, but this functionality is optional and can be kept off. Some Electron apps will also optionally
 self-update (via the same API), if you allow them to check for updates. This applies to the installer (setup) version for
-Windows, and to the AppImage version for Linux. The Store version and the PWA also self-update, but this is not 
+Windows, and to the AppImage version for Linux. The Store version and the PWA also self-update, but this is not
 controllable within the app.
 
 By default, this application will remember your last-visited page between sessions using local stoarage or a cookie
