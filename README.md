@@ -1,4 +1,4 @@
-# Kiwix JS for PWA, Windows and Linux (Electron, NWJS, UWP)
+# Kiwix JS for PWA, Windows, MacOS and Linux (Electron, NWJS, UWP)
 
 Demos:&emsp;[&nbsp;[Instal PWA on Desktop](screenshots/Install-PWA.md)&nbsp;]&emsp;[&nbsp;[Install and use: Android](screenshots/Demo-OPFS_Chrome_Android.md)&nbsp;]&emsp;[&nbsp;[Install and use: Firefox Android](screenshots/Install-PWA_Firefox_Android.md)&nbsp;]&emsp;[&nbsp;[Picking a folder of archives](screenshots/Folder-Picking.md)&nbsp;]&emsp;[&nbsp;[File handling (desktop)](screenshots/Demo-FileHandling.md)&nbsp;]&emsp;[&nbsp;[Demo all OPFS features](screenshots/Demo-OPFS_all_features.md)&nbsp;]&emsp;[&nbsp;[Adding app to Edge sidebar](screenshots/Add-KiwixPWA-to-Edge-sidebar.md)&nbsp;]
 
@@ -11,8 +11,8 @@ There are hundreds of multilingual archives to choose from, on many different to
 offline knowledge!**
 
 Part of the [Kiwix family](https://kiwix.org/), this app is available either as an offline-capable, [installable Progressive Web App](#universal-progressive-web-app)
-(PWA), for almost all modern browsers and devices, or else as app packages for various Windows and Linux operating systems: see
-**[Kiwix JS for Windows and Linux](https://kiwix.github.io/kiwix-js-pwa/app)**. For **Mac and iOS**, use the offline PWA.
+(PWA), for almost all modern browsers and devices, or else as app packages for various Windows, MacOS and Linux operating systems: see
+**[Kiwix JS for Windows, MacOS and Linux](https://kiwix.github.io/kiwix-js-pwa/app)**. For **Mac and iOS**, use the offline PWA.
 
 We also have packaged apps of **[WikiMed by Kiwix](https://kiwix.github.io/kiwix-js-pwa/wikimed)** (a complete medical
 encyclopaedia), and **[Wikivoyage by Kiwix](https://kiwix.github.io/kiwix-js-pwa/wikivoyage)** (a complete travel guide) in
@@ -22,10 +22,14 @@ If you are using **Windows 10 or 11**, then all three apps are conveniently avai
 **[Kiwix JS UWP](https://apps.microsoft.com/detail/9P8SLZ4J979J)**,
 **[WikiMed by Kiwix](https://apps.microsoft.com/detail/9PHJSNP1CZ8J)**,
 and **[Wikivoyage by Kiwix](https://apps.microsoft.com/detail/9N5SB90Q4JBJ)**. They will automatically update when a new package is
-available. If you are using **Linux**, then the
+available.
+
+If you are using **Linux**, then the
 [Electron AppImage package](http://kiwix.github.io/kiwix-js-pwa/app) of Kiwix JS also (optionally) self-updates,
 as does the installable [Windows Electron package](http://kiwix.github.io/kiwix-js-pwa/app). Other apps will notify you when an update
 is available.
+
+If you are using **MacOS**, then the [Electron app](http://kiwix.github.io/kiwix-js-pwa/app) is available as a Universal Binary in a `.app` package (`.zip` file) or `.dmg` installer.
 
 ## Universal Progressive Web App
 
@@ -170,7 +174,7 @@ Refresh the app with Ctrl-R;
 * Vite will watch for changes and will refresh the app when you make any and save them;
 * To preview the bundled version of the app, run `npm run preview`, and Vite will build the app and open a browser window to view the bundled version;
 * To fully build the app, run `npm run build`. The built app will be saved to a directory called `dist` in your cloned repo;
-* To package the app into an executable or installer for your current OS, run `npm run dist`.
+* To package the app into an executable or installer for your current OS, run `npm run dist`. Executables will be stored in `dist/bld/Electron`.
 * To run the app in the Electron framework, you can use `npm start`. This will run the unbundled app in the Electron version specified in `package.json`. See various
 scripts to build the bundled version of the app for Electron in `package.json` (you can only build it for the OS you are currently on, though the Linux app can be built
 on Windows with WSL).
